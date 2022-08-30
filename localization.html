@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robot SLAM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title"> <img height="100" width="100" src="images/gifs/robot3.gif" class="ribbon" alt="" /> </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Project Description</a></li>
+						<!-- <li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Implementation: SLAM</h1>
+							<span class="image fit">
+								<iframe class="image fit" height="500"
+									src="https://www.youtube.com/embed/IRcGNB0fS8E?autoplay=1&mute=1">
+								</iframe>
+							</span>
+							<p>
+								The present implementation makes use of PCL and Eigen libraries to implement 
+								the frontend and the backend of the SLAM process respectively. The system can 
+								handle up to 300 poses to store in the state vector and realies on the effectiveness 
+								of the Point-to-Point ICP algorithm, which was selected due to the efficient and fast 
+								computation compared to most robust alternatives such as the Point-To-Plane ICP or the
+								 G-ICP which tend to be more accurate but are more computationally expensive, this reliability 
+								 problem is compensated by computing the update measurements more often and taking into account 
+								 multiple overlapping scans. The ROS architecture is shown below, where the pekslam node handles both 
+								 the frontend (scan matching) and backend (EKF framework).
+							</p>
+							<span class="image fit"><img src="images/localization/localization_structure.drawio-removebg-preview.png" alt="" /></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

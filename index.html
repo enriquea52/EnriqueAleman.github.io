@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ROBOTICS PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Robotic Projects</a></li>
+							<li><a href="#two">Publications</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<p style="text-align:center;"><a href="#" class="image"><img src="images/Profile.png"  width="300" height="300"/></a>
+							</p>
+							<h1>Jesus Enrique Aleman Gallegos</h1>
+							<p align="justify"> Future Roboticist currently studying a fully funded European Master's degree in Intelligent Field 
+								Robotic Systems <a href="https://ifrosmaster.org/"> IFRoS</a>.  Looking forward to especialize in the development 
+								of fast, safe and reliable planning algorithms to make self driving cars take proper decisions given the environment, sensor measurements and other agents. 
+							</p>
+							<ul id="menu">
+								
+								<li><a href="./files/Transcript.pdf" target="_blank"><i class="fa fa-solid fa-scroll"></i> Current Master's Transcript</a></li>
+								<li><a href="./files/english_proof.pdf" target="_blank"><i class="fa fa-duotone fa-globe"></i> TOEFL IBT Score (Valid Until January 12th 2023)</a></li>
+								<li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/jeag1235/"> LinkedIn Profile</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Main Projects</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="planning.html" class="image"><img src="images/planning/planning_demo.gif" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 style="text-align:center">Robot Exploration Using a Hybrid Approach: Frontier + Sample Based Exploration</h2>
+									<p>This project involved designing an exploration approach for indoor 2D mapping on a Tutlebot 2. The path planning algorithm used is a custom made RRT* that takes into account the differential constraints of the bicycle model to plan smooth and short paths for the robot to follow. </p>
+									<ul class="fab fa-python"></ul>
+									<ul class="fab fa-cuttlefish">++</ul>
+									<ul class="actions">
+										<li><a href="planning.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+
+						<section>
+							<a href="https://github.com/enriquea52/Voronoi-D-Lite" class="image"><img src="images/planning/demo5.gif" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 style="text-align:center"> D* Lite + Voronoi Diagram for Safe, Fast and Efficient Motion Planning and Replanning</h2>
+									<p>Project developed in collaboration with  <a href="https://github.com/sevagul?tab=repositories">Vsevolod Hulchuk</a>. This project shows the implementationn of the original D* Lite algorithm in Python for path planning and replanning on a graph which is defined by a Voronoi decomposition of the environmnet. The current implementation defines the environment with point obstacles.</p>
+									<ul class="fab fa-python"></ul>
+									<ul class="actions">
+										<li><a href="https://github.com/enriquea52/Voronoi-D-Lite" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<a href="localization.html" class="image"><img src="images/localization/update_demo.gif" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 style="text-align:center">Pose Based EKF SLAM Using LiDAR and ICP for Scan Matching</h2>
+									<p> EKF SLAM implemnetation using robot poses to  grow the state vector instead of external features, the 
+										prediction uses the robot's odometry while the update step uses the ICP scan matching algorithm to find 
+										the translation from two overallping LiDAR scans. 
+									</p>
+									<ul class="fab fa-cuttlefish">++</ul>
+									<ul class="actions">
+										<li><a href="localization.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<a href="perception.html" class="image"><img src="images/perception/ezgif.com-gif-maker.gif" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2  style="text-align:center">Collision Risk Assessment Using an Intel Realsense D435i RGB-D Camera for Obstacle Avoidance</h2>
+									<p>Implementation of a 3D perception algorithm to find the Time To Collision (TTC) from the robot's trayectory to any of the points 
+									   from the pointcloud measured using the RGB-D camera allowing to compute the risk to collide, visualize it and create a control signal for the robot to automatically evade the closest obstacle.</p>
+									<ul class="fab fa-python"></ul>
+									<ul class="fab fa-cuttlefish">++</ul>
+									<ul class="actions">
+										<li><a href="perception.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<a href="intervention.html" class="image"><img src="images/intervention/inter_demo.gif" alt="" data-position="60% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 style="text-align:center">Mobile Manipulation Using a Differential Drive Robot and a 4-DoF Palletizing Robotic Arm for Mobile Pick and Place Applications via Task Priority Control</h2>
+									<p>Mobile Pick and Place system using the Task Priority Control algorithm for redundant mechanisms. The object to be picked and placed is detected using ArUco markers, these markers also allow 
+										to compute the 3D position of the object in the glibal coordinate system, for the robotic system to pick it using a vacuum (end-effector).
+									</p>
+									<ul class="fab fa-python"></ul>
+									<ul class="actions">
+										<li><a href="intervention.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<a href="https://github.com/enriquea52/Q-learning-on-a-grid"  class="image"><img src="images/planning/qrl.png" alt="" data-position="50% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 style="text-align:center">Q-Learning on a grid map</h2>
+									<p>Path Planning using reinforcement learning to find a policy that guides a particle robot towards a defined goal in a given grid environment.
+									</p>
+									<ul class="fab fa-python"></ul>
+									<ul class="actions">
+										<li><a href="https://github.com/enriquea52/Q-learning-on-a-grid" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Publications</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-robot"></span>
+									<h3><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11509/2568163/Autonomous-navigation-for-a-holonomic-drive-robot-in-an-unknown/10.1117/12.2568163.short?SSO=1">Autonomous Navigation for a Holonomic Drive Robot in an Unknown Environment Using a Depth Camera</a></h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-robot"></span>
+									<h3><a href="http://revistaaristas.tij.uabc.mx/index.php/revista_aristas/article/view/18">Lane Detection Using Sliding Windows Method on Images</a></h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-robot"></span>
+									<h3><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11136/2528517/Autonomous-navigation-for-a-differential-drive-robot-in-a-partially/10.1117/12.2528517.short">Autonomous Navigation for a Differential Drive Robot in a Partially Known Environment</a></h3>
+								</section>
+								<section>
+									<span class="icon solid major fa-check"></span>
+									<h3>Looking forward to expand this list!</h3>
+									<h5>Topics of Interest:</h5>
+									<ul>
+										<li>Task Planning</li>
+										<li>Path Planning (Graph Search or Sample Based)</li>
+										<li>Reinforcement Learning</li>
+										<li>Multi Robot Coordination, Localization and Planning</li>
+										<li>Self Driving Cars</li>
+									  </ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Please feel free to contact me for discussing robotics projects, ideas or collaboration opportunities!</p>
+
+
+							<figure>
+								<blockquote >
+									<p>"Coming together is a beginning, staying together is progress, and working together is success"</p>
+									<figcaption>-Henry Ford</figcaption>
+								</blockquote>
+							</figure>
+
+							<div class="split style1">
+								<section>
+									<form method="post" action="mailto:enrique.aleman1998@gmail.com">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<p>enrique.aleman1998@gmail.com</p>
+											<p>u1977518@campus.udg.edu</p>
+											<p>jesus.aleman@cetys.edu.mx</p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(+34) 624-408-398</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/enriquea52" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/jeag1235/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

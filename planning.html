@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robot Exploration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title"> <img height="100" width="100" src="images/gifs/robot1.gif" class="ribbon" alt="" /> </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Project Description</a></li>
+						<!-- <li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Implementation: Exploration</h1>
+							<span class="image fit">
+								<iframe class="image fit" height="500"
+									src="https://www.youtube.com/embed/1ImR3idGr1s?autoplay=1&mute=1">
+								</iframe>
+							</span>
+							<p>
+								the exploration task is fundamental to allow robots create maps of the environment, inspect structures, search and rescure operations, among other tasks.
+								the present implementation makes use of a combination of exploration techniques  such as frontier and sample based technniques to take the advange of both and mitigate the problems 
+								that both of them face when executed individually, the proposed and implemented solution is summeried in the image shown below.
+							</p>
+							<span class="image fit"><img src="images/planning/exploration.png" alt="" /></span>
+
+							<h3>The individual algorithms that make out the full system are the following</h3>
+
+							<ul>
+							<li>RRT* with kinematic constraints (implemented from scratch)</li>
+							<li>Fast Frontier Detection (FFD) (implemented from scratch)</li>
+							<li>DBSCAN Clustering Algorithm (using scikit-learn) </li>
+							<li>Sample Based Information Gain Computing (implemented from scratch)</li>
+							</ul>  
+
+							<p>
+								The diagram shown below describes the ROS architecture of the exploration solution. The PyBind11 library was used to create 
+								C++ wrappers for accelerating iterative intensive tasks such as the computation of the Path via the RRT* algorithm and the 
+								execution of the Fast Frontier Detector (FFD). 
+							</p>
+							<span class="image fit"><img src="images/planning/nodes_diag.png" alt="" /></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
