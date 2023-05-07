@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Image Upsampling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title"> <img height="100" width="100" src="images/gifs/cows_cir.gif" class="ribbon" alt="" /> </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Project Description</a></li>
+						<!-- <li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Depth Image Upsampling via Joint Bilateral Upsampling and Iterative Upsamping Algorithms</h1>
+
+                            <span class="image fit"><img src="images/sensor_fusion/upsampling.png"  alt="" /></span>
+
+							<p>
+								Implementation of the Joint Bilateral Upsampling and the Iterative Upsampling algorithms for upsampling depth images using rgb images of larger scales as guides. 
+                                Both upsampling algorithms allow to get a better representation of depth information when the depth image coming from a ToF camera is of low resolution but a high resolution rgb image is available for fusion.
+                                The pointcloud reconstruction is shown in the image below.
+							</p>
+
+							<ul class="actions">
+								<li><a href="https://github.com/enriquea52/Image-Upsampling" class="button">Github Repository</a></li>
+							</ul>
+
+                            <span><img class="center" src="images/sensor_fusion/jbu.png"  alt="" /></span>
+
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -39,7 +39,7 @@
 							<h1>Jesus Enrique Aleman Gallegos</h1>
 							<p align="justify"> Future Roboticist currently studying a fully funded European Master's degree in Intelligent Field 
 								Robotic Systems <a href="https://ifrosmaster.org/"> IFRoS</a>.  Looking forward to especialize in the development 
-								of fast, safe and reliable planning algorithms to make self driving cars take proper decisions given the environment, sensor measurements and other agents. 
+								of fast, accurate and reliable localization algorithms to make autonomous robots make proper representations of the environment in real time. 
 							</p>
 							<ul id="menu">
 								<li><a href="./files/ultimate.pdf" target="_blank"><i class="fa fa-solid fa-dice-d6"></i> Curriculum Vitae</a></li>
@@ -56,6 +56,45 @@
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
+
+					<!-- Tree SLAM -->
+					<section>
+						<a href="tree_slam.html" class="image"><img src="images/trees_slam/tree_slam_sim2.gif"  width="10" height="10" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2 style="text-align:center">EKF SLAM Using Trees as Localization Features</h2>
+								<p>SLAM system using an EKF backend and the <a href="https://github.com/norlab-ulaval/PercepTreeV1" target="_blank" >PerceptTreeV1</a>  model for tree detection and 3D vertical line parametrization as a front end. The system was validated on an AgileX Scout Mini at the ELTE University Campus of Informatics  </p>
+								<ul class="fab fa-python"></ul>
+								<ul class="actions">
+									<li><a href="tree_slam.html" class="button">Learn more</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- Sensor Fusion -->
+					<section>
+						<a href="icp.html" class="image"><img src="images/sensor_fusion/smooth_upsampling.png"  width="10" height="10" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2 style="text-align:center">Sensor Fusion Projects</h2>
+
+								<p>Three sensor fusion projects about: </p>
+								<ul>
+									<li><a href="depth.html" class="button">Depth Estimation from Stereo Image Pairs</a></li>
+									<li><a href="upsampling.html" class="button">Image Filtering and Upsampling</a></li>
+									<li><a href="icp.html" class="button">ICP and Trimmed ICP</a></li>
+								</ul>
+
+								<ul class="fab fa-cuttlefish">++</ul>
+								<ul> CUDA</ul>
+
+							</div>
+						</div>
+					</section>
+
+					<!-- Planning -->
+
 						<section>
 							<a href="planning.html" class="image"><img src="images/planning/planning_demo.gif" alt="" data-position="center center" /></a>
 							<div class="content">
@@ -71,6 +110,7 @@
 							</div>
 						</section>
 
+						<!-- Voronoi -->
 
 						<section>
 							<a href="https://github.com/enriquea52/Voronoi-D-Lite" class="image"><img src="images/planning/demo5.gif" alt="" data-position="25% 25%" /></a>
@@ -85,6 +125,8 @@
 								</div>
 							</div>
 						</section>
+
+						<!-- localization -->
 
 						<section>
 							<a href="localization.html" class="image"><img src="images/localization/update_demo.gif" alt="" data-position="top center" /></a>
@@ -103,6 +145,8 @@
 							</div>
 						</section>
 
+						<!-- perception -->
+
 						<section>
 							<a href="perception.html" class="image"><img src="images/perception/ezgif.com-gif-maker.gif" alt="" data-position="25% 25%" /></a>
 							<div class="content">
@@ -119,6 +163,8 @@
 							</div>
 						</section>
 
+						<!-- intervention -->
+
 						<section>
 							<a href="intervention.html" class="image"><img src="images/intervention/inter_demo.gif" alt="" data-position="60% 25%" /></a>
 							<div class="content">
@@ -134,6 +180,8 @@
 								</div>
 							</div>
 						</section>
+
+						<!-- q_learning -->
 
 						<section>
 							<a href="https://github.com/enriquea52/Q-learning-on-a-grid"  class="image"><img src="images/planning/qrl.png" alt="" data-position="50% 25%" /></a>
@@ -174,10 +222,12 @@
 									<h3>Looking forward to expand this list!</h3>
 									<h5>Topics of Interest:</h5>
 									<ul>
-										<li>Task Planning</li>
-										<li>Path Planning (Graph Search or Sample Based)</li>
-										<li>Reinforcement Learning</li>
-										<li>Multi Robot Coordination, Localization and Planning</li>
+										<li>Continuous Time SLAM</li>
+										<li>Stereo Odometry</li>
+										<li>Place Recognition</li>
+										<li>Data Association</li>
+										<li>Multi Target Tracking</li>
+										<li>ICP</li>
 										<li>Self Driving Cars</li>
 									  </ul>
 								</section>
@@ -190,7 +240,6 @@
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>Please feel free to contact me for discussing robotics projects, ideas or collaboration opportunities!</p>
-
 
 							<figure>
 								<blockquote >
@@ -231,7 +280,7 @@
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>(+34) 624-408-398</span>
+											<span>(+34) 692-933-517</span>
 										</li>
 										<li>
 											<h3>Social</h3>
